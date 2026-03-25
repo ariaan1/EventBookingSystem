@@ -1,0 +1,1 @@
+// Booking history script placeholder.
