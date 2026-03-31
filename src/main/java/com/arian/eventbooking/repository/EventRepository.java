@@ -1,4 +1,7 @@
 package com.arian.eventbooking.repository;
 
-public interface EventRepository {
+import com.arian.eventbooking.entity.Event;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EventRepository extends JpaRepository<Event, Long> {
 }
