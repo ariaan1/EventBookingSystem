@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+target/
+.m2/
+.idea/
+*.iml
+*.log
+application-local.properties
