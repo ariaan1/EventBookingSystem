@@ -1,7 +1,8 @@
 package com.arian.eventbooking.exception;
 
 public class InsufficientSeatsException extends RuntimeException {
-  public InsufficientSeatsException(String message) {
-    super(message);
-  }
+    public InsufficientSeatsException(String message)
+    {
+        super(message);
+    }
 }
