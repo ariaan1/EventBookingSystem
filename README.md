@@ -1,118 +1,163 @@
-🎟️ Event Booking Platform
+# 🎟️ Event Booking Platform
 
-A backend application built with Java and Spring Boot that allows users to browse events, book tickets, and enables administrators to manage events.
+A backend application built with **Java and Spring Boot** that allows users to browse events, book tickets, and enables administrators to manage events.
 
-📌 Project Description
+---
 
-This project simulates a real-world event booking system, following clean architecture principles and best practices in backend development.
+## 📌 Project Description
 
-Users can:
+This project simulates a real-world event booking system using **clean architecture principles** and best backend practices.
 
-Browse available events
-Book tickets
-View their booking history
+### 👤 Users can:
 
-Administrators can:
+* Browse available events
+* Book tickets
+* View booking history
 
-Create new events
-Update existing events
-Delete events
+### 🛠️ Admins can:
 
+* Create events
+* Update events
+* Delete events
 
-🏗️ Architecture
+---
 
-The project follows a Layered Architecture:
+## 🏗️ Architecture
 
-Controller Layer → Handles HTTP requests and responses
-Service Layer → Contains business logic
-Repository Layer → Handles database operations
-Entity & DTO Layer → Defines data structures and data transfer
+The project follows a **Layered Architecture**:
 
+* **Controller Layer** → Handles HTTP requests
+* **Service Layer** → Contains business logic
+* **Repository Layer** → Communicates with the database
+* **DTO Layer** → Transfers clean data between layers
 
-🛠️ Technologies Used
-Java 17+
-Spring Boot
-Spring Web
-Spring Data JPA
-Hibernate
-PostgreSQL / MySQL
-Lombok
-Swagger (OpenAPI) for API documentation
-Maven for dependency management
+---
 
+## 🛠️ Technologies Used
 
-⚙️ Features
-User registration and login (basic authentication)
-Event management (CRUD operations)
-Ticket booking system with validation (no overbooking)
-Booking history tracking
-Clean separation of concerns using DTOs
-API documentation with Swagger
+* Java 17
+* Spring Boot
+* Spring Web
+* Spring Data JPA
+* Hibernate
+* PostgreSQL / MySQL
+* Lombok
+* Swagger (OpenAPI)
+* Maven
 
+---
 
-🗄️ Database Design
+## ⚙️ Features
 
-Main entities:
+* User registration & login (basic)
+* Event CRUD operations
+* Ticket booking system (with validation)
+* Booking history
+* DTO-based clean API
+* Swagger API documentation
 
-User
-Event
-Booking
+---
 
-Key relationships:
+## 🗄️ Database Design
 
-A user can have multiple bookings
-An event can have multiple bookings
-Each booking belongs to one user and one event
+### Main Entities:
 
+* User
+* Event
+* Booking
 
+### Relationships:
 
-🚀 Getting Started
-1. Clone the repository
+* One User → Many Bookings
+* One Event → Many Bookings
+* Each Booking → belongs to one User & one Event
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/your-username/EventBookingSystem.git
 cd EventBookingSystem
-2. Configure the database
+```
 
-Update your application.properties:
+---
 
+### 2. Configure Database
+
+Update `application.properties`:
+
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/event_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-3. Run the application
+```
+
+---
+
+### 3. Run the project
+
+```bash
 mvn spring-boot:run
-4. Access Swagger UI
+```
+
+---
+
+### 4. Open Swagger UI
+
+```
 http://localhost:8080/swagger-ui.html
-📖 API Examples
-Create Event
+```
+
+---
+
+## 📖 API Endpoints
+
+### Create Event
+
+```
 POST /api/events
-Get All Events
+```
+
+### Get All Events
+
+```
 GET /api/events
-Book Tickets
+```
+
+### Book Tickets
+
+```
 POST /api/bookings
+```
 
+---
 
-🧠 Learning Goals
+## 🧠 Learning Goals
 
-This project was built to:
+* Understand Spring Boot architecture
+* Build REST APIs
+* Work with databases (JPA & relationships)
+* Implement business logic correctly
+* Use DTOs instead of entities
 
-Understand layered architecture in Spring Boot
-Learn how to design RESTful APIs
-Practice database relationships (One-to-Many, Many-to-One)
-Implement business logic in the service layer
-Use DTOs instead of exposing entities
-Work with real-world backend scenarios
+---
 
+## 🔮 Future Improvements
 
-📌 Future Improvements
-JWT Authentication & Authorization
-Role-based access control (ADMIN / USER)
-Payment integration
-Email notifications
-Frontend integration (Vue.js)
+* JWT Authentication
+* Role-based authorization (ADMIN / USER)
+* Payment integration
+* Email notifications
+* Frontend (Vue.js)
 
+---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Arian Aliu
